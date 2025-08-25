@@ -1,8 +1,3 @@
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=integral-830&label=Profile%20views&color=0e75b6&style=flat" alt="integral-830" style="display: inline-block;"/>
-</p>
-
-
 ```rust
 pub struct Dev {
     name: &'static str,
