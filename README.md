@@ -14,11 +14,8 @@ fn main() {
     let self = Dev {
         name: "Aysuh Verma",
         role: "Smart Contract Developer + Web3 Dev 👩‍💻",
-        langs: ["🟦 Solidity", "🦀 Rust",  "⚡ TypeScript", "Kotlin", ],
+        langs: ["🟦 Solidity", "🦀 Rust",  "⚡ TypeScript", "Kotlin" ],
     };
-
-    println!("Hi, I'm {} 👋\n{}", self.name, self.role);
-    println!("I am currently into: {}", self.langs.join(", "));
 }
 ```
 
@@ -52,4 +49,4 @@ fn main() {
 ### Where to find me
 
 [![Gmail](https://img.shields.io/badge/-Gmail-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:andy.ayushverma@gmail.com)
-[![Instagram](https://img.shields.io/badge/-Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://instagram.com/_integra_30)
+[![Instagram](https://img.shields.io/badge/-Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://instagram.com/_integral_30)
