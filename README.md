@@ -1,15 +1,20 @@
 ```rust
 pub struct Dev {
-    name: &'static str,
-    role: &'static str,
-    langs: [&'static str; 4],
+use std::fmt::Display;
+
+struct Dev<'a, T: Display> {
+    name: &'a str,
+    role: Option<&'a str>,
+    langs: [&'a str; 4],
+    _m: std::marker::PhantomData<T>,
 }
 
 fn main() {
-    let self = Dev {
-        name: "Aysuh Verma",
-        role: "Smart Contract Developer + Web3 Dev 👩‍💻",
-        langs: ["🟦 Solidity", "🦀 Rust",  "⚡ TypeScript", "Kotlin" ],
+    let d: Dev<i32> = Dev {
+        name: "Ayush Verma",
+        role: Some("Web3 Dev"),
+        langs: ["🟦 Solidity","🦀 Rust","⚡ TS","Kotlin"],
+        _m: std::marker::PhantomData,
     };
 }
 ```
